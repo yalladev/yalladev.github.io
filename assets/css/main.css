@@ -1,0 +1,113 @@
+@import url(/assets/css/fonts.css);
+:root {
+  /* Colors */
+  --royalBlue: #5271ff;
+  --charcoal: #333;
+  /*  */
+  --colorTransition: 0.3s color linear;
+  --backgroundColorTransition: 0.3s background-color linear;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  appearance: none;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: "ReadexPro";
+  color: var(--charcoal);
+  background: url(/assets/img/bg.svg) repeat;
+  background-size: contain;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Main CSS */
+/* header */
+.header {
+  /* header-content */
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* logo */
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    height: 70px;
+    & img {
+      width: 32px;
+      border-radius: 50%;
+      border: 2px solid var(--charcoal);
+    }
+    & h1 {
+      font-family: "Lalezar";
+      & span {
+        color: var(--royalBlue);
+      }
+    }
+  }
+  /* navbar */
+  .navbar {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      .bx {
+        font-size: 26px;
+        color: var(--royalBlue);
+        transition: var(--colorTransition);
+        &:hover {
+          color: var(--charcoal);
+        }
+      }
+    }
+  }
+  /* github */
+  .github {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    .bxl-git {
+      font-size: 38px;
+    }
+    .github-content {
+      display: flex;
+      flex-flow: column wrap;
+      gap: 3px;
+      .data {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        & span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3px;
+        }
+      }
+    }
+  }
+}
