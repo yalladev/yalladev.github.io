@@ -119,3 +119,22 @@ body {
     }
   }
 }
+
+/* media */
+@media (min-width: 280px) and (max-width: 412px){
+  .navbar {
+    position: fixed;
+    background-color: var(--royalBlue);
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    .nav-links {
+      width: 100%;
+      justify-content: space-around;
+      .bx {
+        font-size: 26px;
+        color: #fff !important;
+      }
+    }
+  }
+}
