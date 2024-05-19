@@ -2,7 +2,7 @@
 :root {
   /* Colors */
   --royalBlue: #5271ff;
-  --charcoal: #333;
+  --deepBlue: #112233;
   /*  */
   --colorTransition: 0.3s color linear;
   --backgroundColorTransition: 0.3s background-color linear;
@@ -55,11 +55,11 @@ body {
       .brandLogo {
         width: 32px;
         border-radius: 50%;
-        border: 2px solid var(--charcoal);
+        border: 2px solid var(--deepBlue);
       }
       .brandName {
         font-family: "Lalezar";
-        color: var(--charcoal);
+        color: var(--deepBlue);
         font-size: 32px;
         font-weight: normal;
         & span {
@@ -73,7 +73,7 @@ body {
     }
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 540px) {
   .header {
     .container {
       /* navbar */
@@ -86,11 +86,14 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: var(--charcoal);
+        background-color: var(--deepBlue);
         .nav-link {
           width: 32px;
           height: 32px;
-          font-size: 26px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 28px;
           color: #fefefe;
         }
       }
