@@ -73,7 +73,7 @@ body {
     }
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 428px) {
   .header {
     .container {
       /* navbar */
